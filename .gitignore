@@ -2,6 +2,11 @@
 .recommenders
 RemoteSystemsTempFiles/
 
+Gerenciador-de-Cursos/bin
+Gerenciador-de-Cursos/.settings
+Gerenciador-de-Cursos/.classpath
+Gerenciador-de-Cursos/.project
+
 #bin
 #.settings
 #.classpath
