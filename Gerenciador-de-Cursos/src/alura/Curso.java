@@ -13,6 +13,8 @@ public class Curso {
 	private List<Aula> aulas = new LinkedList<Aula>();
 	
 	private Set<Aluno> alunos = new HashSet<>();
+	//private Set<Aluno> alunos = new LinkedHashSet<>();
+	//private Set<Aluno> alunos = new TreeSet<>();
 
 	public Curso(String nome, String instrutor) {
 		super();

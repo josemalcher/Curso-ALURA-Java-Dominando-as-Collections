@@ -1,5 +1,9 @@
 package alura;
 
+import java.util.Iterator;
+import java.util.Set;
+import java.util.Vector;
+
 public class TestaCursoComAluno {
 
 	public static void main(String[] args) {
@@ -36,7 +40,25 @@ public class TestaCursoComAluno {
 		
 		System.out.println("O a1 ==(equals) ao Jose Malcher?");
 		System.out.println(a1.equals(joseMalcher));
+		
+		System.out.println("*** AULA 8 ****");
+		for (Aluno aluno : javaColecoes.getAlunos()) {
+			System.out.println(aluno);
+		}
+		System.out.println();
 
+		//Iterator 
+		Set<Aluno> alunos = javaColecoes.getAlunos();
+		Iterator<Aluno> iterador = alunos.iterator();
+		iterador.hasNext();//há algum ooutro elemento?
+		while(iterador.hasNext()){
+			Aluno proximo = iterador.next();
+			System.out.println(proximo);
+		}
+		//é necessário criar um novo interator
+		//Aluno depoisDoUltimo = iterador.next();
+		
+		//Vector<Aluno> vetor = new Vector<>(); //muito antiga(não recomendado), usa varias threads
 	}
 
 }
