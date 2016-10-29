@@ -22,6 +22,20 @@ public class TestaCursoComAluno {
 		javaColecoes.getAlunos().forEach( a -> {
 			System.out.println(a );
 		});
+		
+		
+		System.out.println("O Aluno "+ a1 + " está matriculado?");
+		System.out.println(javaColecoes.estaMatriculado(a1));
+		
+		System.out.println("** Equals e HashCode**");
+		//equals
+		Aluno joseMalcher = new Aluno("Jose Malcher", 12345);
+		//String nome = "Jose Malcher";
+		System.out.println(javaColecoes.estaMatriculado(joseMalcher));
+		//hashCode -> tabela de espalhamento
+		
+		System.out.println("O a1 ==(equals) ao Jose Malcher?");
+		System.out.println(a1.equals(joseMalcher));
 
 	}
 
